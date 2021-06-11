@@ -1,16 +1,8 @@
 from django.db import models
 
-# Create your models here.
-
-class Categories(models.Model):
+class Category(models.Model):
 
     name = models.CharField(max_length=50)
-    store = models.ForeignKey(
-        'self',blank=True,
-        null=True,
-        related_name='stores',
-        on_delete=models.DO_NOTHING
-    )
 
     def __str__(self):
         return f'{self.name}'
@@ -22,6 +14,7 @@ class Store(models.Model):
         'Category',
         null=True,
         blank=True,
+        related_name='store_type',
         on_delete=models.DO_NOTHING
     )
     image_shop = models.CharField(max_length=250)
