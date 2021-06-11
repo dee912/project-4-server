@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.deletion import CASCADE
 
 class Category(models.Model):
 
@@ -12,10 +13,7 @@ class Store(models.Model):
     name = models.CharField(max_length=50)
     category = models.ForeignKey(
         'Category',
-        null=True,
-        blank=True,
-        related_name='store_type',
-        on_delete=models.DO_NOTHING
+        on_delete=models.CASCADE
     )
     image_shop = models.CharField(max_length=250)
     image_product = models.CharField(max_length=250)
