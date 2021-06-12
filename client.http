@@ -1,3 +1,16 @@
 @baseURL = http://localhost:8000
 
 GET {{baseURL}}/api/stores/
+
+###
+
+POST {{baseURL}}/api/stores/
+Content-Type: application/json
+
+{
+  "name": "Test place",
+  "imageShop": "image.shop",
+  "imageProduct": "image.product",
+  "address": "123 asd rd",
+  "description": "Tester"
+}
