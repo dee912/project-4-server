@@ -9,5 +9,6 @@
   },
   "window.title": "BACKEND",
   
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": "/Users/devantespaine/.local/share/virtualenvs/server-ZTNLB2mF/bin/python"
 }
