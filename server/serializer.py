@@ -25,7 +25,7 @@ class StoreSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
-        models = Category
+        model = Category
         fields = '__all__'
 
 #! Populated
@@ -34,6 +34,6 @@ class PopulatedCommentSerializer(CommentSerializer):
     owner = UserSerializer()
 
 class PopulatedStoreSerializer(StoreSerializer):
-    category = CommentSerializer(many=True)
+    category = CategorySerializer(many=True)
     comments = PopulatedCommentSerializer(many=True)
-    favourited_by = UserSerializer()
+    # favourited_by = UserSerializer(many=True)

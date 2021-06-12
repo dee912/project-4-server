@@ -1,10 +1,10 @@
-@baseURL = http://localhost:8000
+@baseURL = http://localhost:8000/api/stores/
 
-GET {{baseURL}}/api/stores/
+GET {{baseURL}}
 
 ###
 
-POST {{baseURL}}/api/stores/
+POST {{baseURL}}
 Content-Type: application/json
 
 {
@@ -13,4 +13,21 @@ Content-Type: application/json
   "imageProduct": "image.product",
   "address": "123 asd rd",
   "description": "Tester"
+}
+
+###
+
+GET {{baseURL}}4/
+
+###
+
+PUT {{baseURL}}4/
+Content-Type: application/json
+
+{
+  "name": "NEW NAME",
+  "imageShop": "image.shop",
+  "imageProduct": "image.product",
+  "address": "123 asd rd",
+  "description": "NEW DESCRIPTION"
 }

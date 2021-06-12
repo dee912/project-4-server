@@ -19,11 +19,11 @@ class Store(models.Model):
     image_product = models.CharField(max_length=250)
     address  = models.TextField(max_length=250)
     description = models.TextField(max_length=350)
-    favourites = models.ManyToManyField(
-        'jwt_auth.user',
-        related_name='favorites',
-        blank=True
-    )
+    # favourites = models.ManyToManyField(
+    #     'jwt_auth.user',
+    #     related_name='favorites',
+    #     blank=True
+    # )
 
     def __str__(self):
         return f'{self.name}'
