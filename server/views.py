@@ -41,3 +41,8 @@ class StoreDetailView(APIView):
             updated_store.save()
             return Response(updated_store.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_store.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    def delete(self, _request, pk):
+        store_to_delete = self.get_store(pk=pk)
+        store_to_delete.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

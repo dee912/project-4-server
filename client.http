@@ -31,3 +31,11 @@ Content-Type: application/json
   "address": "123 asd rd",
   "description": "NEW DESCRIPTION"
 }
+
+###
+
+DELETE {{baseURL}}5/
+Content-Type: application/json
+
+###
+
