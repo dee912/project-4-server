@@ -36,4 +36,4 @@ class PopulatedCommentSerializer(CommentSerializer):
 class PopulatedStoreSerializer(StoreSerializer):
     category = CategorySerializer(many=True)
     comments = PopulatedCommentSerializer(many=True)
-    # favourited_by = UserSerializer(many=True)
+    favourited_by = UserSerializer(many=True)
