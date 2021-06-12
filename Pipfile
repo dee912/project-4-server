@@ -8,6 +8,7 @@ django = "*"
 pylint = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+djangorestframework-camel-case = "*"
 
 [dev-packages]
 
