@@ -30,10 +30,10 @@ class CategorySerializer(serializers.ModelSerializer):
 
 #! Populated
 
-class PopulatedCommentSerializer(CommentSerializer):
-    owner = UserSerializer()
+# class PopulatedCommentSerializer(CommentSerializer):
+#     owner = UserSerializer()
 
-class PopulatedStoreSerializer(StoreSerializer):
-    category = CommentSerializer(many=True)
-    comments = PopulatedCommentSerializer(many=True)
-    favourited_by = UserSerializer()
+# class PopulatedStoreSerializer(StoreSerializer):
+#     category = CommentSerializer(many=True)
+#     comments = PopulatedCommentSerializer(many=True)
+#     favourited_by = UserSerializer()

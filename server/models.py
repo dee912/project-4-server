@@ -10,9 +10,10 @@ class Category(models.Model):
 class Store(models.Model):
 
     name = models.CharField(max_length=50)
-    category = models.ForeignKey(
-        'Category',
-        on_delete=models.CASCADE
+    category = models.ManyToManyField(
+        'category',
+        related_name='categories',
+        blank=True
     )
     image_shop = models.CharField(max_length=250)
     image_product = models.CharField(max_length=250)
