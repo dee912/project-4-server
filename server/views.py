@@ -1,9 +1,10 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework import status
+from rest_framework import serializers, status
+from rest_framework.exceptions import NotFound
 
 from .models import Store
-from .serializer import StoreSerializer
+from .serializer import StoreSerializer, PopulatedStoreSerializer
 
 class StoreListView(APIView):
 
@@ -19,3 +20,18 @@ class StoreListView(APIView):
             new_store.save()
             return Response(new_store.data, status=status.HTTP_201_CREATED)
         return Response(new_store.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class StoreDetailView(APIView):
+
+    def get_store(self, pk):
+        try:
+            return Store.objects.get(pk=pk)
+        except Store.DoesNotExist:
+            return NotFound()
+
+    def get(self, _request, pk):
+        store = self.get_store(pk=pk)
+        serialized_store = PopulatedStoreSerializer(store)
+        return Response(serialized_store.data, status=status.HTTP_200_OK)
+
+    def put()

@@ -3,9 +3,9 @@
     "statusBar.background": "#ff8800",
     "titleBar.activeBackground": "#ff8800",
     "titleBar.inactiveBackground": "#ff8800",
-    "statusBar.foreground": "#000",
-    "titleBar.inactiveForeground": "#000",
-    "titleBar.activeForeground": "#000",
+    "statusBar.foreground": "#5900ff",
+    "titleBar.inactiveForeground": "#5900ff",
+    "titleBar.activeForeground": "#5900ff",
   },
   "window.title": "BACKEND",
   
