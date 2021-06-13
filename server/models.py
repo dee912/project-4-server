@@ -21,7 +21,7 @@ class Store(models.Model):
     description = models.TextField(max_length=350)
     favourites = models.ManyToManyField(
         'jwt_auth.user',
-        related_name='favorites',
+        related_name='favourites',
         blank=True
     )
 

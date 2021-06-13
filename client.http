@@ -1,10 +1,10 @@
-@baseURL = http://localhost:8000/api/stores/
+@baseURL = http://localhost:8000/api/
 
-GET {{baseURL}}
+GET {{baseURL}}stores/
 
 ###
 
-POST {{baseURL}}
+POST {{baseURL}}stores/
 Content-Type: application/json
 
 {
@@ -17,11 +17,11 @@ Content-Type: application/json
 
 ###
 
-GET {{baseURL}}4/
+GET {{baseURL}}stores/4/
 
 ###
 
-PUT {{baseURL}}4/
+PUT {{baseURL}}stores/4/
 Content-Type: application/json
 
 {
@@ -34,8 +34,32 @@ Content-Type: application/json
 
 ###
 
-DELETE {{baseURL}}5/
+DELETE {{baseURL}}stores/5/
 Content-Type: application/json
 
 ###
 
+POST {{baseURL}}auth/register/
+Content-Type: application/json
+
+{
+  "username": "dee1",
+  "email": "dee@email1.com",
+  "password": "password",
+  "passwordConfirmation": "password",
+  "profileImage": "image.jpg"
+}
+
+###
+
+POST {{baseURL}}auth/login/
+Content-Type: application/json
+
+{
+  "email": "dee@email1.com",
+  "password": "password"
+}
+
+###
+
+GET {{baseURL}}auth/profile/1/
