@@ -43,8 +43,8 @@ POST {{baseURL}}auth/register/
 Content-Type: application/json
 
 {
-  "username": "dee1",
-  "email": "dee@email1.com",
+  "username": "dee2",
+  "email": "dee@email2.com",
   "password": "password",
   "passwordConfirmation": "password",
   "profileImage": "image.jpg"
@@ -56,7 +56,7 @@ POST {{baseURL}}auth/login/
 Content-Type: application/json
 
 {
-  "email": "dee@email1.com",
+  "email": "dee@email2.com",
   "password": "password"
 }
 
