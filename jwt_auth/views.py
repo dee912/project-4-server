@@ -8,10 +8,9 @@ from django.conf import settings
 import jwt
 
 from .serializers import UserSerializer
-from .populated import PopulatedSerializer
+from .populated import PopulatedUserSerializer
 
 User = get_user_model()
-
 class RegisterView(APIView):
 
     def post(self, request):
@@ -19,7 +18,7 @@ class RegisterView(APIView):
         if user_to_create.is_valid():
             user_to_create.save()
             return Response(
-                {'detail': 'Registration Succesfull'},
+                {'message: Registration Succesfull'},
                 status=status.HTTP_201_CREATED
             )
         return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -39,7 +38,6 @@ class LoginView(APIView):
             raise PermissionDenied({'detail': 'Unauthorized'})
 
         expiry_time = datetime.now() + timedelta(days=7)
-
         token = jwt.encode(
             {'sub': user_to_login.id, 'exp':  int(expiry_time.strftime('%s'))},
             settings.SECRET_KEY,
@@ -52,9 +50,9 @@ class LoginView(APIView):
 class ProfileView(APIView):
 
     def get(self, _request, pk):
-        try:
+        try :
             user = User.objects.get(pk=pk)
-            serialized_user = PopulatedSerializer(user)
+            serialized_user = PopulatedUserSerializer(user)
             return Response(serialized_user.data, status=status.HTTP_200_OK)
         except User.DoesNotExist:
-            return NotFound()
+            raise NotFound()

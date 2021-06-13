@@ -17,7 +17,7 @@ Content-Type: application/json
 
 ###
 
-GET {{baseURL}}stores/4/
+GET {{baseURL}}stores/1/
 
 ###
 
@@ -59,6 +59,10 @@ Content-Type: application/json
   "email": "dee@email1.com",
   "password": "password"
 }
+
+###
+
+POST http://localhost:8000/api/stores/1/favorite/
 
 ###
 
