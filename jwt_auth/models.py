@@ -5,14 +5,14 @@ class User(AbstractUser):
 
     PERSONAL = 'Personal'
     BUSINESS = 'Business'
-    type_of_store = [
+    account_type = [
         (PERSONAL,  'Personal'),
         (BUSINESS, 'Business'),
     ]
 
     type = models.CharField(
         max_length=8,
-        choices=type_of_store,
+        choices=account_type,
         default=PERSONAL
     )
     email = models.CharField(max_length=50)

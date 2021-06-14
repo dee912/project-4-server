@@ -24,6 +24,11 @@ class Store(models.Model):
         related_name='favourites',
         blank=True
     )
+    owner = models.ForeignKey(
+        'jwt_auth.User',
+        related_name='owned_stores',
+        on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return f'{self.name}'

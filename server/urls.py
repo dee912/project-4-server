@@ -10,7 +10,7 @@ from .views import (
 urlpatterns = [
     path('', StoreListView.as_view()),
     path('<int:pk>/', StoreDetailView.as_view()),
-    path('<int:pk>/faviourite/', StoreFavouriteView.as_view()),
+    path('<int:pk>/favourite/', StoreFavouriteView.as_view()),
     path('<int:store_pk>/comments/', CommentListView.as_view()),
     path('<int:_store_pk>/comments/<int:comment_pk>/', CommentDetailView.as_view())
 ]
