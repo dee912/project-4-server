@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Category(models.Model):
 
@@ -20,7 +21,7 @@ class Store(models.Model):
     address  = models.TextField(max_length=250)
     description = models.TextField(max_length=350)
     favourited_by = models.ManyToManyField(
-        'jwt_auth.user',
+        'jwt_auth.User',
         related_name='favourites',
         blank=True
     )
@@ -28,6 +29,14 @@ class Store(models.Model):
         'jwt_auth.User',
         related_name='owned_stores',
         on_delete=models.CASCADE
+    )
+    latitude = models.FloatField(
+        validators=[MinValueValidator(-90), MaxValueValidator(90)],
+        default=53.404068
+    )
+    longitude = models.FloatField(
+        validators=[MinValueValidator(-90), MaxValueValidator(90)],
+        default=-2.985266
     )
 
     def __str__(self):

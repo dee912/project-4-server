@@ -1,0 +1,106 @@
+[
+{
+  "model": "server.category",
+  "pk": 1,
+  "fields": {
+    "name": "Food"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 2,
+  "fields": {
+    "name": "Cafe"
+  }
+},
+{
+  "model": "server.store",
+  "pk": 2,
+  "fields": {
+    "name": "Pho Cue",
+    "image_shop": "https://d2joqs9jfh6k92.cloudfront.net/wp-content/uploads/2020/07/13090911/pho-cue_6517-scaled.jpg",
+    "image_product": "https://d2joqs9jfh6k92.cloudfront.net/wp-content/uploads/2020/11/10130740/phocuekitchen_124029345_806904759881445_4385140291783512908_n.jpg",
+    "address": "52a Faulkner St, Manchester M1 4FH",
+    "description": "Authentic Vietnamese Cuisine, With A Modern Twist.",
+    "owner": 1,
+    "category": [
+      1
+    ],
+    "favourited_by": [1],
+    "latitude": 53.477900,
+    "longitude": -2.240630
+  }
+},
+{
+  "model": "server.store",
+  "pk": 3,
+  "fields": {
+    "name": "Root Coffee",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2021/05/image00002-1024x808.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2021/05/image00015-768x1024.jpg",
+    "address": "52 Hanover St, L1 4AF",
+    "description": "Cozy cafe",
+    "owner": 1,
+    "category": [
+      2
+    ],
+    "favourited_by": [],
+    "latitude": 53.403460,
+    "longitude": -2.983740
+  }
+},
+{
+  "model": "server.store",
+  "pk": 4,
+  "fields": {
+    "name": "Fika",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2020/09/DfexvRmX0AYGzmJ.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2020/09/Screen-Shot-2020-09-30-at-13.16.38-883x1024.jpg",
+    "address": "131 Woolton Rd, L15 6TB",
+    "description": "The city has recently become awash with the Scandinavian vibe – from Nordic-inspired pop-up dining clubs to Scandi-cool venues that put an IKEA catalogue to shame. Fika is part of that movement.",
+    "owner": 1,
+    "category": [
+      1
+    ],
+    "favourited_by": [],
+    "latitude": 53.393700,
+    "longitude": -2.909290
+  }
+},
+{
+  "model": "server.store",
+  "pk": 5,
+  "fields": {
+    "name": "The Nakery",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2020/07/107741512_1188858634820419_5614893327670399540_n-833x1024.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2020/07/83022700_577861672945368_4408866092068372480_n.jpg",
+    "address": "44 Berry St, L1 9DF",
+    "description": "A PLACE TO SATISFY YOUR SWEET TOOTH WITHOUT LOSING SOME ALONG THE WAY.",
+    "owner": 1,
+    "category": [
+      1
+    ],
+    "favourited_by": [],
+    "latitude": 53.400610,
+    "longitude": -2.976240
+  }
+},
+{
+  "model": "server.store",
+  "pk": 6,
+  "fields": {
+    "name": "Mother Espresso",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2019/10/Mother.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2019/10/@motherespresso-1024x685.jpg",
+    "address": "82 Wood St, L1 4DQ",
+    "description": "A coffee shop on the ground floor of a building called Tea Factory. But look past the irony and you may have just stumbled on one of the best coffee shops in Liverpool. J",
+    "owner": 1,
+    "category": [
+      2
+    ],
+    "favourited_by": [],
+    "latitude": 53.402291,
+    "longitude": -2.977731
+  }
+}
+]
