@@ -1,19 +1,25 @@
 @baseURL = http://localhost:8000/api/
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDIwNTEzM30.7-MbWMBTsZ83Utd5SYaK3ltvpSQnWaTdjCGJzrXxMTY
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTYyNDQzODY5N30.8TN-9P3WdDIkzYECYaDSDf2biKgA2l2gzhci5-SmBXc
 
 GET {{baseURL}}stores/
 
 ###
 
+GET {{baseURL}}stores/category
+
+###
+
 POST {{baseURL}}stores/
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "name": "Test place",
   "imageShop": "image.shop",
   "imageProduct": "image.product",
   "address": "123 asd rd",
-  "description": "Tester"
+  "description": "Tester",
+  "owner": "3"
 }
 
 ###
@@ -44,8 +50,8 @@ POST {{baseURL}}auth/register/
 Content-Type: application/json
 
 {
-  "username": "dee2",
-  "email": "dee@email2.com",
+  "username": "dee6",
+  "email": "dee6@email.com",
   "password": "password",
   "passwordConfirmation": "password",
   "profileImage": "image.jpg"
@@ -57,7 +63,7 @@ POST {{baseURL}}auth/login/
 Content-Type: application/json
 
 {
-  "email": "dee@email2.com",
+  "email": "dee6@email.com",
   "password": "password"
 }
 

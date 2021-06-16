@@ -4,8 +4,13 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
-from .models import Store, Comment
-from .serializer import StoreSerializer, PopulatedStoreSerializer, CommentSerializer
+from .models import Category, Store, Comment
+from .serializer import (
+    StoreSerializer,
+    PopulatedStoreSerializer,
+    CommentSerializer,
+    CategorySerializer
+)
 
 class StoreListView(APIView):
 
@@ -94,3 +99,10 @@ class  CommentDetailView(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Comment.DoesNotExist:
             raise NotFound()
+
+class CategoryListView(APIView):
+
+    def get(self, _request):
+        categories = Category.objects.all()
+        serilaized_categories = CategorySerializer(categories, many=True)
+        return Response(serilaized_categories.data, status=status.HTTP_200_OK)

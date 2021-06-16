@@ -4,11 +4,13 @@ from .views import (
     StoreDetailView,
     StoreFavouriteView,
     CommentListView,
-    CommentDetailView
+    CommentDetailView,
+    CategoryListView
 )
 
 urlpatterns = [
     path('', StoreListView.as_view()),
+    path('category/', CategoryListView.as_view()),
     path('<int:pk>/', StoreDetailView.as_view()),
     path('<int:pk>/favourite/', StoreFavouriteView.as_view()),
     path('<int:store_pk>/comments/', CommentListView.as_view()),
