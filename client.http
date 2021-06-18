@@ -75,3 +75,9 @@ Authorization: Bearer {{token}}
 ###
 
 GET {{baseURL}}auth/profile/3/
+
+###
+
+POST {{baseURL}}stores/1/comments/
+
+{}
