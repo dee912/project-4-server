@@ -1,5 +1,5 @@
 @baseURL = http://localhost:8000/api/
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjQsImV4cCI6MTYyNDQzODY5N30.8TN-9P3WdDIkzYECYaDSDf2biKgA2l2gzhci5-SmBXc
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTYyNDg4NDIyOH0.CmlEES1n6atjrkru5qvczTBukujDqJ8h-zBuf2qNJh0
 
 GET {{baseURL}}stores/
 
@@ -14,12 +14,11 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-  "name": "Test place",
-  "imageShop": "image.shop",
-  "imageProduct": "image.product",
-  "address": "123 asd rd",
-  "description": "Tester",
-  "owner": "3"
+  "name": "Penny Lane Wine Bar",
+  "imageShop": "https://independent-liverpool.co.uk/wp-content/uploads/2021/06/image0-3-768x1024.jpg",
+  "imageProduct": "https://independent-liverpool.co.uk/wp-content/uploads/2021/06/image0-2.jpeg",
+  "address": "116 Penny Lane, L18 1DQ",
+  "description": "Wine bar"
 }
 
 ###
@@ -69,7 +68,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:8000/api/stores/1/favourite/
+POST http://localhost:8000/api/stores/4/favourite/
 Authorization: Bearer {{token}}
 
 ###
