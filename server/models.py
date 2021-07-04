@@ -29,7 +29,7 @@ class Store(models.Model):
         'jwt_auth.User',
         related_name='owned_stores',
         on_delete=models.CASCADE,
-        default=1
+        default=2
     )
     latitude = models.FloatField(
         validators=[MinValueValidator(-90), MaxValueValidator(90)],
