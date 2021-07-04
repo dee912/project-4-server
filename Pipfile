@@ -13,6 +13,7 @@ pyjwt = "*"
 python-dotenv = "*"
 dj-database-url = "*"
 django-cors-headers = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 
