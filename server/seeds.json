@@ -14,6 +14,48 @@
   }
 },
 {
+  "model": "server.category",
+  "pk": 3,
+  "fields": {
+    "name": "Drinks"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 4,
+  "fields": {
+    "name": "Dessert"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 5,
+  "fields": {
+    "name": "Bakery"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 6,
+  "fields": {
+    "name": "homeware"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 7,
+  "fields": {
+    "name": "Homeware"
+  }
+},
+{
+  "model": "server.category",
+  "pk": 8,
+  "fields": {
+    "name": "Exercise"
+  }
+},
+{
   "model": "server.store",
   "pk": 2,
   "fields": {
@@ -23,12 +65,15 @@
     "address": "52a Faulkner St, Manchester M1 4FH",
     "description": "Authentic Vietnamese Cuisine, With A Modern Twist.",
     "owner": 1,
+    "latitude": 53.4779,
+    "longitude": -2.24063,
     "category": [
       1
     ],
-    "favourited_by": [1],
-    "latitude": 53.477900,
-    "longitude": -2.240630
+    "favourited_by": [
+      2,
+      1
+    ]
   }
 },
 {
@@ -41,12 +86,12 @@
     "address": "52 Hanover St, L1 4AF",
     "description": "Cozy cafe",
     "owner": 1,
+    "latitude": 53.40346,
+    "longitude": -2.98374,
     "category": [
       2
     ],
-    "favourited_by": [],
-    "latitude": 53.403460,
-    "longitude": -2.983740
+    "favourited_by": []
   }
 },
 {
@@ -59,12 +104,12 @@
     "address": "131 Woolton Rd, L15 6TB",
     "description": "The city has recently become awash with the Scandinavian vibe – from Nordic-inspired pop-up dining clubs to Scandi-cool venues that put an IKEA catalogue to shame. Fika is part of that movement.",
     "owner": 1,
+    "latitude": 53.3937,
+    "longitude": -2.90929,
     "category": [
       1
     ],
-    "favourited_by": [],
-    "latitude": 53.393700,
-    "longitude": -2.909290
+    "favourited_by": []
   }
 },
 {
@@ -77,12 +122,12 @@
     "address": "44 Berry St, L1 9DF",
     "description": "A PLACE TO SATISFY YOUR SWEET TOOTH WITHOUT LOSING SOME ALONG THE WAY.",
     "owner": 1,
+    "latitude": 53.40061,
+    "longitude": -2.97624,
     "category": [
       1
     ],
-    "favourited_by": [],
-    "latitude": 53.400610,
-    "longitude": -2.976240
+    "favourited_by": []
   }
 },
 {
@@ -95,12 +140,259 @@
     "address": "82 Wood St, L1 4DQ",
     "description": "A coffee shop on the ground floor of a building called Tea Factory. But look past the irony and you may have just stumbled on one of the best coffee shops in Liverpool. J",
     "owner": 1,
+    "latitude": 53.402291,
+    "longitude": -2.977731,
     "category": [
       2
     ],
-    "favourited_by": [],
-    "latitude": 53.402291,
-    "longitude": -2.977731
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 7,
+  "fields": {
+    "name": "Penny Lane Wine Bar",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2021/06/image0-3-768x1024.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2021/06/image0-2.jpeg",
+    "address": "116 Penny Lane, L18 1DQ",
+    "description": "Wine bar",
+    "owner": 1,
+    "latitude": 53.404068,
+    "longitude": -2.985266,
+    "category": [],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 10,
+  "fields": {
+    "name": "The Watering Can",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2019/07/IMG_20190628_083238_resized_20190704_030857183-1024x768.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2019/07/IMG_20190422_170530_1_resized_20190704_030543898-768x1024.jpg",
+    "address": "64 Greenbank Road, Greenbank Park, Liverpool, L18 1HQ",
+    "description": "The Watering Can is open 7 days per week, serving high quality breakfasts until noon; seasonal bistro specials, sandwiches, salads, sharing platters and amazing cakes throughout the afternoon. The décor integrates reclaimed window shutters from a Victorian mansion, distressed and waxed scaffolding boards, rusted tin and tree trunks. It’s a Pinterest lover’s dream. What’s even lovelier is owner Keith made every single table in the café with his own hands. Two of the main focal points are the rust",
+    "owner": 2,
+    "latitude": 53.38902,
+    "longitude": -2.92638,
+    "category": [
+      1,
+      3
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 11,
+  "fields": {
+    "name": "Northern Soul",
+    "image_shop": "https://i2-prod.manchestereveningnews.co.uk/incoming/article16670196.ece/ALTERNATES/s615b/0_DJ_MEN_300719NorthernSoul_10.jpg",
+    "image_product": "https://www.aboutmanchester.co.uk/wp-content/uploads/2020/05/NSGC.jpg",
+    "address": "Unit G20, 21, 44 Tib St, Manchester M4 1LA",
+    "description": "How can we give a 5 star review to a grilled cheese restaurant ? Well- I suggest you go and you will find out. The place is now bordering on legendary status! The music is brilliant and whilst the menu isnt particularly extensive there is a cheese sandwich varient for everyone! Brilliant in its class !",
+    "owner": 3,
+    "latitude": 53.48309,
+    "longitude": -2.23579,
+    "category": [
+      1
+    ],
+    "favourited_by": [
+      1,
+      2,
+      3,
+      8
+    ]
+  }
+},
+{
+  "model": "server.store",
+  "pk": 12,
+  "fields": {
+    "name": "Gooey",
+    "image_shop": "https://tasteofmanchester.com/media/images/Gooey_at_Hatch.jpg",
+    "image_product": "https://images.squarespace-cdn.com/content/v1/5e5ecc4131c1672fb95eea6b/1590850868295-KUS8IYPKV0EUP9QEEZTA/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C",
+    "address": "Ducie Street Warehouse, Manchester, M1 2TP",
+    "description": "Gooey is a cookie + donut bakery currently based in Ducie Street Warehouse in the Northern Quarter, Manchester.",
+    "owner": 2,
+    "latitude": 53.480221,
+    "longitude": -2.22922,
+    "category": [
+      4
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 13,
+  "fields": {
+    "name": "Carlisi",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2021/04/91136592_2518155531782468_2052698135003660288_n.jpeg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2021/04/Carlisi-Breakfast-1024x1024.jpg",
+    "address": "92-94 Dale St, L2 5TF",
+    "description": "Liverpool’s financial district is usually a fast-pace place full of weary eyes, large lattes and late nights in the office. Amidst the chaos is Carlisi – a welcome respite. Everything from Italian breakfasts and coffee in the morning to cheese and meat boards with cocktails in the evening. The art of the Aperetivo is shown the utmost respect in Carlisi – so much so they’ve won awards for them at the inaugural Italian Awards.",
+    "owner": 2,
+    "latitude": 53.40897,
+    "longitude": -2.98588,
+    "category": [
+      1,
+      3
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 14,
+  "fields": {
+    "name": "Buyers Club",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2021/05/DSCF7727-1024x682.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2021/05/IMG_8906-709x1024.jpg",
+    "address": "4 Hardman St, L1 9AX",
+    "description": "Tucked away off the beaten track of Hardman Street is a rather unassuming alleyway that leads to a 7-days-a-week garden party. A triple threat of drinks, dining and dancing. A chameleon bar that effortlessly changes and adapts throughout the day and night. A place for sourdough pizzas and soul nights. Limoncello spritz and low-intervention wines. Handmade pasta and heartfelt local art adorning the walls.",
+    "owner": 3,
+    "latitude": 53.40178,
+    "longitude": -2.97193,
+    "category": [
+      1,
+      3
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 15,
+  "fields": {
+    "name": "Haunt",
+    "image_shop": "https://i2-prod.manchestereveningnews.co.uk/incoming/article20848860.ece/ALTERNATES/s615/0_DJ_MEN_180621haunt_17.jpg",
+    "image_product": "https://i2-prod.manchestereveningnews.co.uk/incoming/article20848890.ece/ALTERNATES/s1227b/0_DJ_MEN_180621haunt_14.jpg",
+    "address": "58 Peter St, Manchester M2 3NQ",
+    "description": "An all day coffee, wine and cocktail spot that takes inspiration from European aperitivo bars, it’s dead fancy inside. Big booths, huge bi fold doors that swing out onto the street with seating out front too. FOOD AND DRINKS. The drinks menu has a big Italian wine list and lots of spritzes, Aperol Spritz, Hugo Spritz, Tarragon Spritz, Bellini and Rhubarb Fizz and classic cocktails.",
+    "owner": 2,
+    "latitude": 53.477553,
+    "longitude": -2.245946,
+    "category": [
+      1,
+      3
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 16,
+  "fields": {
+    "name": "Batard",
+    "image_shop": "https://www.eatmcr.co.uk/wp-content/uploads/2021/03/1W6A5766-2048x1365.jpg",
+    "image_product": "https://images.squarespace-cdn.com/content/v1/60247beb1a8f4425d71e1784/1613252968103-TZF6QERWB407S08LKES9/ke17ZwdGBToddI8pDm48kKy6u3m1RA-h2j_EQ-dX1QVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyNYRqh_hjUth0Xe-YMd6wZkVT9W8BiLxxoHqyC",
+    "address": "2 Burton Rd, Withington, Manchester, M20 3ED",
+    "description": "A community-minded, small batch bakehouse. Based in Miles Platting.",
+    "owner": 4,
+    "latitude": 53.433262,
+    "longitude": -2.231167,
+    "category": [
+      5
+    ],
+    "favourited_by": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "server.store",
+  "pk": 17,
+  "fields": {
+    "name": "A Slower Space",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2020/02/IMG_20200203_110855_747.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2020/02/IMG_20200203_110855_747.jpg",
+    "address": "38 Penny Lane, L18 1DG",
+    "description": "The influence from their travels to Sri Lanka, Bali, Vietnam and Thailand is evident. The concept of A Slower Space is centred on a relaxed shopping environment, one where you can grab a fresh coffee or mint tea as you browse the wide range of homeware, gifts and plants. The idea behind the name is to inspire people to take a relaxed moment for themselves. Something, we can all admit, we don’t do enough.",
+    "owner": 4,
+    "latitude": 53.386508,
+    "longitude": -2.919813,
+    "category": [
+      7
+    ],
+    "favourited_by": [
+      4
+    ]
+  }
+},
+{
+  "model": "server.store",
+  "pk": 18,
+  "fields": {
+    "name": "The Oracle",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2020/01/73225729_2479810185436054_6556377266513772544_n-2.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2020/01/74214547_142017603864406_82754566570901504_o-2-1024x1024.jpg",
+    "address": "92 Duke Street, L1 5AG",
+    "description": "Located at 92 Duke Street, The Oracle is located on the second floor of an 18th century merchant’s house. Inspired by the atmosphere of a Victorian gambling den, the bar’s features include an opulent marble fireplace and 18th century wooden floorboards, all finished with muted lighting and cosy soft furnishings.",
+    "owner": 1,
+    "latitude": 53.400997,
+    "longitude": -2.979882,
+    "category": [
+      3
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.store",
+  "pk": 19,
+  "fields": {
+    "name": "Yogacita",
+    "image_shop": "https://independent-liverpool.co.uk/wp-content/uploads/2018/04/yoga1-1024x681.jpg",
+    "image_product": "https://independent-liverpool.co.uk/wp-content/uploads/2018/04/IMG_3286-1024x768.jpg",
+    "address": "Yogacita, 1st Floor, The Old Gun Factory, 20 Watkinson Street, Baltic Triangle, L1 0AF",
+    "description": "Lucita Fernandez is the creator and owner of Yogacita. She first discovered yoga when living in Barcelona, practicing with friends on the beach and park. It was on her return to the UK that Lucita joined formal classes and discovered Happiness Hot Yoga – it was then that she fell irrevocably in love with yoga. Through regularly practicing hot yoga, she found the benefits were endless, it was great for the skin and increased her cardiovascular strength with the added benefits of increased flexibi",
+    "owner": 1,
+    "latitude": 53.398315,
+    "longitude": -2.982468,
+    "category": [
+      8
+    ],
+    "favourited_by": []
+  }
+},
+{
+  "model": "server.comment",
+  "pk": 1,
+  "fields": {
+    "content": "food",
+    "store": 2,
+    "owner": 1
+  }
+},
+{
+  "model": "server.comment",
+  "pk": 2,
+  "fields": {
+    "content": "hello",
+    "store": 2,
+    "owner": 1
+  }
+},
+{
+  "model": "server.comment",
+  "pk": 3,
+  "fields": {
+    "content": "hello",
+    "store": 18,
+    "owner": 1
+  }
+},
+{
+  "model": "server.comment",
+  "pk": 4,
+  "fields": {
+    "content": "GGs",
+    "store": 11,
+    "owner": 8
   }
 }
 ]
