@@ -1,0 +1,162 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$x3e1KCtXRFPHX3USWRQdTJ$7OCCBM9J35WZrKG/7rYdsZEL0Xl9Bpl8HtZWkcWRctA=",
+    "last_login": "2021-07-04T12:33:10.120Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-06-21T11:46:00Z",
+    "type": "Personal",
+    "email": "admin@email.com",
+    "profile_image": "https://upload.wikimedia.org/wikipedia/en/8/86/Avatar_Aang.png",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$gaAaAFg5rMwwEj4FNMVD9y$ol+T6F8DSzfm0qQEdXq/tCLnjqwjwMlzbNPaAr8UhG8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dee95",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T12:02:00.224Z",
+    "type": "Personal",
+    "email": "dee95@email.com",
+    "profile_image": "http://res.cloudinary.com/dx7kidpqy/image/upload/v1624276916/project_4_images/izhxpte5q2diuoywodn3.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$rx8XyfjH0iYdFtor5o0rYp$KeuffDP7dMa0Nhy4adVgj2tVnEKrdaiwXHJ70AFTgeE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dee6",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T12:43:45.068Z",
+    "type": "Personal",
+    "email": "dee6@email.com",
+    "profile_image": "image.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dee919",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T17:38:25Z",
+    "type": "Personal",
+    "email": "dee919@email.com",
+    "profile_image": "img.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$9b67YQISPEXvepldEzPg0u$Ib4QWwda6MlTCQxknZ+YIOu6OyTAH0zAzCXeeijEQdk=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dee",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T19:33:00.653Z",
+    "type": "Personal",
+    "email": "dee@dee",
+    "profile_image": "http://res.cloudinary.com/dx7kidpqy/image/upload/v1624303976/project_4_images/yendzn28i5xojdmo0mox.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$ixXd5YfF3oS65RivfcngxU$E52MG8VGzFoURdtaPa35eeBzjX2fheoYAvb3w+3ST1Q=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "dee951111",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T19:34:13.323Z",
+    "type": "Personal",
+    "email": "dee@email.com",
+    "profile_image": "http://res.cloudinary.com/dx7kidpqy/image/upload/v1624304017/project_4_images/zipit3sv71qni1fnqac1.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$sDmktrHMpLFSQtRwL0ufBP$aTVi6++inzjto/kFutDiMoqkQ+KP2nnYPJeFYqe0+vc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tester",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-21T19:39:43.820Z",
+    "type": "Personal",
+    "email": "tester@email.com",
+    "profile_image": "http://res.cloudinary.com/dx7kidpqy/image/upload/v1624304360/project_4_images/pqf747eizhd7bivdby1p.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$bawsNvijh4AGoASabo8ohk$EmVn0iLxOY9x4m9Bq9TiGyACih3jTVwr6RbGNOq3uQw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "devante",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-06-22T09:21:07.752Z",
+    "type": "Personal",
+    "email": "devante@email.com",
+    "profile_image": "http://res.cloudinary.com/dx7kidpqy/image/upload/v1624353664/project_4_images/heifkgkifwii160lhsow.png",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
