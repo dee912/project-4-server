@@ -46,18 +46,14 @@ As with each project, time was taken to lay out a well thought out plan.
 * After relationships were finished I began whiteboarding the screens I wanted.
 * Models required were drafted up.
 * Any additional thoughts I had were add to my notes section to refer back to incase I lost the train of thought whilst coding.
+
 ![wireframes 1](./images/wire1.png)
 
 ![wireframes 2](./images/wire2.png)
 
-
 ![notes](./images/notes.png)
 
 ![wireframes models](./images/models.png)
-
-
-
-
 # The process
 
 ## Backend (Day 1 to 3)
@@ -123,7 +119,7 @@ Whilst with the user model I opted to have the multi choice selection as there w
 
 * Personal
 * Business
-
+``` Python
 class User(AbstractUser):
  
    PERSONAL = 'Personal'
@@ -140,7 +136,7 @@ class User(AbstractUser):
    )
    email = models.CharField(max_length=50)
    profile_image = models.CharField(max_length=250)
-
+```
 The idea here was allow each account type to have different permissions in the final app:
 
 Personal accounts:
@@ -158,6 +154,7 @@ Business accounts:
 ### Views
 
 Views were set up to be able to use the REST requests on the frontend. These were mostly unchanged from finishing the backend and moving to the front. The main addition was creating a view for GET requests.
+```Python
 
 class CategoryListView(APIView):
  
@@ -166,6 +163,7 @@ class CategoryListView(APIView):
        serilaized_categories = CategorySerializer(categories, many=True)
        return Response(serilaized_categories.data, status=status.HTTP_200_OK)
 
+```
 This was created due to wanting to display the store categories on their show page and this was a quick job and just added a nice touch to the site.
 
 ## Frontend (Day 3 to 9)
