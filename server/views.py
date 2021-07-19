@@ -16,7 +16,6 @@ class StoreListView(APIView):
 
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
-
     def get(self, _request):
         stores = Store.objects.all()
         serialized_stores = StoreSerializer(stores, many=True)
