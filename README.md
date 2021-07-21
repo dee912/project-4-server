@@ -2,7 +2,7 @@
 
 # Overview
 
-Project 4 was my final and most free project during the course. We were given the option of working individually or in groups up to 3 people max. I decided to go for an **individual approach** as I wanted to have a final go of being involved in every aspect of the project and help solidify my understanding. The project was a **full stack application** but with **the backend being written in Python and the frontend in **React**, we could create any website we wanted and my idea came from the recent boom of **independent stores in the North-West of England. My site was inspired by Independent Liverpool** but with the inclusion of Manchester.
+Project 4 was my final and most free project during the course. We were given the option of working individually or in groups up to 3 people max. I decided to go for an **individual approach** as I wanted to have a final go of being involved in every aspect of the project and help solidify my understanding. The project was a **full stack application** but with **the backend being written in Python and the frontend in React**, we could create any website we wanted and my idea came from the recent boom of **independent stores in the North-West of England. My site was inspired by Independent Liverpool** but with the inclusion of Manchester.
 
 ![home page](.//images/home.png)
 
