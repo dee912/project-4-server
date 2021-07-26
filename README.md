@@ -2,7 +2,7 @@
 
 # Overview
 
-Project 4 was my final and most free project during the course. We were given the option of working individually or in groups up to 3 people max. I decided to go for an **individual approach** as I wanted to have a final go of being involved in every aspect of the project and help solidify my understanding. The project was a **full stack application** but with **the backend being written in Python and the frontend in React**, we could create any website we wanted and my idea came from the recent boom of **independent stores in the North-West of England. My site was inspired by Independent Liverpool** but with the inclusion of Manchester.
+Project 4 was my final and most free project during the course. We were given the option of working individually or in groups up to 3 people max. I decided to go for an **individual approach** as I wanted to have a final go of being involved in every aspect of the project and help solidify my understanding. The project was a **full stack application** but with **the backend being written in Python and the frontend in **React**, we could create any website we wanted and my idea came from the recent boom of **independent stores in the North-West of England. My site was inspired by Independent Liverpool** but with the inclusion of Manchester.
 
 ![home page](.//images/home.png)
 
@@ -10,11 +10,11 @@ The full site is available [**here!**](https://independent-nw.netlify.app/).
 
 # Brief
 
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database
-* **Consume your API with a separate front-end** built with React
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
+* **Build a full-stack application** by making your own backend and your own front-end.
+* **Use a Python Django API** using Django REST Framework to serve your data from a Postgres database.
+* **Consume your API with a separate front-end** built with React.
+* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
+* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
 * **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
 * **Be deployed online** so it's publicly accessible.
 
@@ -45,7 +45,7 @@ As with each project, time was taken to lay out a well thought out plan.
 
 * After relationships were finished I began whiteboarding the screens I wanted.
 * Models required were drafted up.
-* Any additional thoughts I had were add to my notes section to refer back to incase I lost the train of thought whilst coding.
+* Any additional thoughts I had were added to my notes section to refer back to incase I lost the train of thought whilst coding.
 
 ![wireframes 1](./images/wire1.png)
 
@@ -143,7 +143,7 @@ Personal accounts:
 
 * Leave reviews and comments on stores.
 * Make bookings.
-* Faviourite stores.
+* Favourite stores.
 
 Business accounts:
 
@@ -172,7 +172,7 @@ This was created due to wanting to display the store categories on their show pa
 ![home page](./images/home.png)
 
 
-* For the home page I wanted it to have a bit more to it than just a logo
+* For the home page I wanted it to have a bit more to it than just a logo.
 * I set up the design to show 6 featured stores.
 * The 6 stores are randomly generated each time with the following code:
 
@@ -259,7 +259,7 @@ export function isOwner(store) {
 
 * For a new store to be created and appear on the mapbox map longitude and latitude need to be manually typed in.
 * To make it easier I added a Need Help button which redirects users to a longlat converter.
-* With having 2 image uploads I had to make separate folders in cloudinary as uploading 2 files to the same folder at the same time threw a 422 unprocessable entity.
+* With having 2 image uploads I had to make separate folders in Cloudinary as uploading 2 files to the same folder at the same time threw a 422 unprocessable entity.
 * For the double upload I was still able to tie them both together into one function:
 ```JavaScript
  const handleImageUpload = name => file => {
@@ -288,17 +288,17 @@ export function isOwner(store) {
 
 ## Challenges
 
-PUT requests: I struggled getting put requests to work on the front end, it is an area I’m currently working on to understand better
+* PUT requests: I struggled getting put requests to work on the front end, it is an area I’m currently working on to understand better.
 
-Solo working: Working as an individual comes with its pros but not having anyone else to rely on made it harder when I wanted some feedback and advice.
+* Solo working: Working as an individual comes with its pros but not having anyone else to rely on made it harder when I wanted some feedback and advice.
 
 ## Win
 
-Solo working: I’m happy at the amount of work I managed to complete by myself and I feel I have a good overall understanding of the project as opposed to only segments as was with team projects.
+* Solo working: I’m happy at the amount of work I managed to complete by myself and I feel I have a good overall understanding of the project as opposed to only segments as was with team projects.
 
-The Look: The design of the site came out better than I originally imagined with some tweeks needed here and there.
+* The Look: The design of the site came out better than I originally imagined with some tweeks needed here and there.
 
-Confidence: My confidence has massively grown through this project and I do believe that was in part to it being a solo project.
+* Confidence: My confidence has massively grown through this project and I do believe that was in part to it being a solo project.
 
 # What was learnt 
 
@@ -315,7 +315,7 @@ Confidence: My confidence has massively grown through this project and I do beli
 * On the homepage the background of the lower section does not show.
 * When searching on the index page the map moves into the new free space.
 * Comments on the show page can’t be deleted with the delete button.
-* Show page can’t be edited
+* Show page can’t be edited.
 
 # Future development
 
